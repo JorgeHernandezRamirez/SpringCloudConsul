@@ -1,0 +1,13 @@
+server:
+   port: 8080
+
+spring:
+   cloud:
+      consul:
+         host: localhost
+         port: 8500
+         discovery:
+            port: 8080
+            prefer-ip-address: true
+            healthCheckPath: /health
+            healthCheckInterval: 5s

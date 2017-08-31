@@ -1,0 +1,12 @@
+spring:
+  #Configuración para que se obtenga los properties de consul de las rutas
+  # - /config/application/data
+  # - /config/application,[PERFIL]/data
+  # - /config/springcloudwebtest/data
+  # - /config/springcloudwebtest,[PERFIL]/data
+  cloud:
+    consul:
+      config:
+        format: YAML
+  application:
+     name: springcloudwebtest
